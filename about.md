@@ -4,4 +4,6 @@ title: About Me
 permalink: /about/
 tags: about
 ---
-About me
+19 
+London 
+Aspiring ML Engineer
