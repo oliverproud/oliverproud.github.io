@@ -8,7 +8,7 @@ url:         "oliverproud.github.com"
 date_format: "%d %b, %Y"
 header_pages:
  - about.md
- - contact.html
+ #- contact.html
 
 # Google services
 google_verification:
@@ -121,7 +121,6 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-# https://github.com/jekyll/jekyll/issues/2938
 exclude:
   - Gemfile
   - Gemfile.lock
