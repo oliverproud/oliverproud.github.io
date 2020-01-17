@@ -6,7 +6,7 @@ summary: Summary of test post one.
 categories: test
 ---
 
-# Title of post
+# Title of post one
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae sapien eu tortor tincidunt venenatis vel a dolor. In eu tempor purus, ac fermentum risus. Nam quis scelerisque ante, vel luctus nibh. Phasellus tempus bibendum enim. Suspendisse luctus sed ex vel sagittis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin in est sed quam sagittis malesuada a sed metus.
 
