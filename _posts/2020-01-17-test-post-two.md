@@ -6,8 +6,6 @@ summary: Summary of test post two.
 categories: test
 ---
 
-# Title of post two
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris risus leo, dictum id vehicula ac, efficitur nec tortor. Nulla libero ante, viverra et congue nec, scelerisque sed magna. Pellentesque sed mauris quis nunc suscipit vulputate. Sed congue vitae dui et pharetra. Mauris non nibh tristique, euismod tellus id, lacinia eros. Nulla luctus, augue id efficitur commodo, metus orci ornare risus, sed malesuada lorem magna eget mauris. Integer sit amet faucibus elit.
 
 In tempus tempor tortor, non bibendum sem lacinia non. Donec nec odio vel justo aliquam semper. Integer tristique purus eu turpis vestibulum, at lobortis augue rhoncus. Aenean ornare non neque non finibus. Nullam ultrices tempor urna, at aliquet mauris posuere quis. Duis fermentum mi mauris, eget commodo felis luctus at. In quis dolor sit amet augue consequat posuere. Suspendisse laoreet sem et efficitur vehicula. Nunc tristique pellentesque cursus. Quisque et quam non quam sollicitudin accumsan sed et neque.
