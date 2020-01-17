@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Post One
+title: Placeholder Post One
 date: 2020-01-17-00:20
-summary: Summary of test post one.
+summary: Summary of placeholder post one.
 categories: test
 ---
 
