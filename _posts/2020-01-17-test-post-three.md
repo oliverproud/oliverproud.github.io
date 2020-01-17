@@ -6,8 +6,6 @@ summary: Summary of test post three.
 categories: test
 ---
 
-# Title of post three
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet sit amet nulla vitae vulputate. Quisque molestie nisl pellentesque odio pellentesque congue. Proin et risus sapien. Donec in finibus augue, a commodo nibh. Morbi congue felis non quam tincidunt pellentesque. Duis nibh nisl, consectetur quis tempor vel, laoreet et magna. Aenean sapien mauris, pulvinar sed condimentum porta, varius id neque. Quisque nec dui ac dolor tempus maximus a a eros. Quisque id ullamcorper turpis. Maecenas et suscipit tellus. Aliquam massa ex, convallis at accumsan id, ultrices id est.
 
 Aenean blandit tristique dolor sed posuere. Praesent pretium dui neque, volutpat aliquam nulla interdum id. Cras vehicula sapien non massa blandit, sit amet ultrices augue tincidunt. Phasellus malesuada rhoncus libero, eget rhoncus nunc semper id. Nullam ac interdum purus. Fusce vestibulum enim non rhoncus venenatis. Fusce interdum erat vel magna pretium, ac tempus ante tincidunt. Phasellus scelerisque sapien at congue lacinia. Phasellus non dolor maximus, iaculis justo at, tempor purus. Morbi porttitor mi purus, non commodo nisl semper in. Duis feugiat vestibulum euismod. Vestibulum nunc lorem, imperdiet non porta non, tincidunt ac diam.
