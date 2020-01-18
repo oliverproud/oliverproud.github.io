@@ -1,5 +1,9 @@
 <div class="py2 post-footer">
-  <img src="{{ site.baseurl }}/images/avatar.jpg" alt="Oliver Proud" class="avatar" />
+  <picture>
+    <source type="image/webp" srcset="{{ site.baseurl }}/images/avatar.webp">
+    <source type="image/jpeg" srcset="{{ site.baseurl }}/images/avatar.jpg">
+    <img src="{{ site.baseurl }}/images/avatar.webp" alt="Avatar" class="avatar">
+  </picture>
   <p>
     Follow me on <a href="https://twitter.com/oliverwproud">Twitter</a>.
   </p>
