@@ -5,7 +5,7 @@ author:      Oliver Proud
 description: "Blog page for Oliver Proud"
 baseurl:     ""
 url:         "oliverproud.github.io"
-date_format: "%b %-d %Y"
+date_format: "%B %-D, %Y"
 header_pages:
  - about.md
 
