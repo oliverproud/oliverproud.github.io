@@ -10,9 +10,9 @@ layout: default
         <div class="post py3">
           <p class="post-meta">
 	    {% if site.date_format %}
-	      {{ post.date | date: site.date_format }}
+	      {{ post.date | date: site.date_format }} •
 	    {% else %}
-	      {{ post.date | date: "%b %-d, %Y" }}
+	      {{ post.date | date: "%b %-d, %Y" }} •
 	    {% endif %}
 		  
             {% assign minutes = post.content | strip_html | number_of_words | divided_by: 180 %}
