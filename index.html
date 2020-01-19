@@ -18,8 +18,8 @@ layout: default
 	    {% if minutes == 0 %}
             {% assign minutes = 1 %}
 	    {% endif %}
-	    {% if page.minutes %}
-            {{ page.minutes }} {{ site.text.post.minute_read | default: "minute read" }}
+	    {% if post.minutes %}
+            {{ post.minutes }} {{ site.text.post.minute_read | default: "minute read" }}
             {% else %}
             {{ minutes }} {{ site.text.post.minute_read | default: "minute read" }}
             {% endif %}
