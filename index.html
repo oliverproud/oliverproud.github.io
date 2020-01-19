@@ -15,15 +15,19 @@ layout: default
 	      {{ post.date | date: "%b %-d, %Y" }}
 	    {% endif %}
 		  
-		  
+            {% assign minutes = post.content | strip_html | number_of_words | divided_by: 180 %}
+	    {% if minutes == 0 %}
+	    {% assign minutes = 1 %}
+            {% endif %}
+
 
 	   <span class="post-meta small">
-		   {% assign minutes = post.content | number_of_words | divided_by: 180 %}
-		   {% if minutes == 0 %}
-		   {% assign read-time = site.var_less_than_a_minute_read %}
-		   {% else %}
-		   {% assign read-time = minutes | append: "&nbsp;" | append: site.var_min_read %}
-		   {% endif %} 		  
+		   
+	 	{% if post.minutes %}
+   		 {{ post.minutes }} {{ site.text.post.minute_read | default: "minute read" }}
+  		{% else %}
+    		 {{ minutes }} {{ site.text.post.minute_read | default: "minute read" }}
+  		{% endif %}	  
   	   </span>
 
 	  </p>
