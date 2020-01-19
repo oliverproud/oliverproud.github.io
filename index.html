@@ -19,14 +19,14 @@ layout: default
 	    {% if minutes == 0 %}
 	    {% assign minutes = 1 %}
             {% endif %}
-   
-	    {% if post.minutes %}
-   	      {{ post.minutes }} {{ site.text.post.minute_read | default: "minute read" }}
-  	    {% else %}
-    	      {{ minutes }} {{ site.text.post.minute_read | default: "minute read" }}
-  	     {% endif %}	  
-
-
+		  
+   	    <span class="post-meta small">
+	    	{% if post.minutes %}
+   	          {{ post.minutes }} {{ site.text.post.minute_read | default: "minute read" }}
+  	   	{% else %}
+    	          {{ minutes }} {{ site.text.post.minute_read | default: "minute read" }}
+  	     	{% endif %}
+	   </span>
 	  </p>
           <a href="{{ post.url | relative_url }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
           <span class="post-summary">
