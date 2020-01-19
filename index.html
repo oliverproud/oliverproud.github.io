@@ -14,15 +14,19 @@ layout: default
 	    {% else %}
 	      {{ post.date | date: "%b %-d, %Y" }}
 	    {% endif %}
+		  
 	    {% assign minutes = content | strip_html | number_of_words | divided_by: 180 %}
 	    {% if minutes == 0 %}
             {% assign minutes = 1 %}
 	    {% endif %}
-	    {% if post.minutes %}
-            {{ post.minutes }} {{ site.text.post.minute_read | default: "minute read" }}
-            {% else %}
-            {{ minutes }} {{ site.text.post.minute_read | default: "minute read" }}
-            {% endif %}
+		  
+	     <span class="post-meta small">
+  		{% if page.minutes %}
+    		{{ page.minutes }} {{ site.text.post.minute_read | default: "minute read" }}
+  		{% else %}
+    		{{ minutes }} {{ site.text.post.minute_read | default: "minute read" }}
+  		{% endif %}
+  	   </span>
 
 	  </p>
           <a href="{{ post.url | relative_url }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
