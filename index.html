@@ -24,9 +24,9 @@ layout: default
 	   <span class="post-meta small">
 		   
 	 	{% if post.minutes %}
-   		 {{ post.minutes }} {{ site.text.post.minute_read | default: "minute read" }}
+   		 {{ post.minutes }} {{ site.text.post.minute_read | append: "&nbsp;" |default: "minute read" }}
   		{% else %}
-    		 {{ minutes }} {{ site.text.post.minute_read | default: "minute read" }}
+    		 {{ minutes }} {{ site.text.post.minute_read | append: "&nbsp;" |default: "minute read" }}
   		{% endif %}	  
   	   </span>
 
