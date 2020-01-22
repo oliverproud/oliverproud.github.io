@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ML/Data Science Interview Questions
-date: 2020-01-22-17:10
+date: 2020-01-22-19:54
 summary: A frequently updated list of commonly asked ML interview questions.
 categories: draft
 ---
