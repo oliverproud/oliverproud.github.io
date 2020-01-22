@@ -22,9 +22,9 @@ In **unsupervised learning**, the dataset is a collection of unlabelled examples
 
 ### 3. Explain the differences between L1 and L2 regularisation 
 
-**L1 regularisation**, also known as Lasso regularisation, is a way of regularising a model's weights by adding a penalising term to the loss function. This term contains a hyperparameter that is multiplied by the absolute value of the weights. When this hyperparameter is greater than zero it tends to lead to less important features being essentially turned off with their weights getting close to zero, leading to a sparse, less complex model. 
+**L1 regularisation**, also known as lasso regularisation, is a way of regularising a model's weights by adding a penalising term to the loss function. This term contains a hyperparameter that is multiplied by the absolute value of the weights. When this hyperparameter is greater than zero it tends to lead to less important features being essentially turned off with their weights getting close to zero, leading to a sparse, less complex model. 
 
-**L2 regularisation**, also known as Ridge regularisation, is a way of regularising a model's weights by adding a penalising term to the loss function. This term again contains a tuneable hyperparameter that is multiplied by the square of the weights. L2 regularisation is also differentiable so it can be used with gradient descent during training to optimise the loss function. 
+**L2 regularisation**, also known as ridge regularisation, is a way of regularising a model's weights by adding a penalising term to the loss function. This term again contains a tuneable hyperparameter that is multiplied by the square of the weights. L2 regularisation is also differentiable so it can be used with gradient descent during training to optimise the loss function. 
 
 ### 4. How Does the Self-attention mechanism work?
 
