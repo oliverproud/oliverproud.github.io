@@ -3,6 +3,7 @@ layout: post
 title: Draft Post
 date: 2020-01-22-11:13
 summary: Summary of draft.
+draft: true
 categories: draft
 ---
 
