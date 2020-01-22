@@ -28,7 +28,7 @@ In **unsupervised learning**, the dataset is a collection of unlabelled examples
 
 ### 4. How Does the Self-attention mechanism work?
 
-_The following comes from Peter Bloems blog post on Transformers (the best I have found)_
+_The following comes from Peter Bloems [blog post](http://www.peterbloem.nl/blog/transformers "TRANSFORMERS FROM SCRATCH") on Transformers (the best I have found)_
 
 **Self-attention** is a sequence-to-sequence operation: a sequence of vectors go in and a sequence of vectors come out. The input vectors can be X1 to Xn and the corresponding output vectors can be Y1 to Yn. 
 The output vector Yn is produced by applying the self-attention operation of a weighted average across all of the input vectors. There is a weight W that is not a traditional weight parameter like in a neural network but is rather derived from a function over Xi and Xj. The simplest option for the function is the dot product. The dot product can give a value anywhere from negative to positive infinity, so a softmax is applied to scale the values between [0, 1], ensuring they sum up to 1 over the whole sequence. 
