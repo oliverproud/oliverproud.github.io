@@ -61,14 +61,14 @@ There are a few main ways to account for class imbalance:
 1. Collect more data for the underrepresented class 
 2. Resample your data so that your classes are around 50:50:
 
-- - Oversample the minority class by making multiple copies of the same example of that class.
-  - Downsample the majority class by randomly removing some examples of the majority class.
+    - Oversample the minority class by making multiple copies of the same example of that class.
+    - Downsample the majority class by randomly removing some examples of the majority class.
 
 1. Some algorithms allow you to provide a weighting to a specific class for the algorithm to take into account when training
 2. Creating synthetic examples from your minority class using the algorithms:
 
-- - Synthetic Minority Oversampling Technique (SMOTE)
-  - Adaptive Synthetic Sampling Method (ADASYN)
+    - Synthetic Minority Oversampling Technique (SMOTE)
+    - Adaptive Synthetic Sampling Method (ADASYN)
 
 ### 6. How would you detect whether a model is underfitting/overfitting?
 
@@ -95,7 +95,7 @@ If you have confirmed your model is overfitting then you can try the following t
 
 - Regularisation - your model is too complex for the data, it is learning patterns in the data and fitting to the noise. Examples of regularisation are: 
 
-- - L1 and L2 regularisation
+  - L1 and L2 regularisation
   - Batch Normalisation (this is not actually a form of regularisation, but routinely has the effect of it)
   - Dropout
   - Early stopping (don't do this one, it's just an example).
