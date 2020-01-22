@@ -25,7 +25,7 @@ show_post_footers:    true
 show_social_icons:    true
 ajaxify_contact_form: true
 enable_mathjax: true
-extended_fonts: false
+extended_fonts: true
 enable_anchorjs: false
 # Preview image for social media aka og:image and twitter:image
 post_preview_image: false
