@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ML/Data Science Interview Questions
-date: 2020-01-23-11:13
+date: 2020-01-22
 summary: A frequently updated list of commonly asked ML interview questions.
 categories: draft
 ---
@@ -10,7 +10,7 @@ categories: draft
 
 **Supervised Learning:**
 
-The dataset is a collection of labelled examples, each example **x** is a feature vector. The goal of a supervised machine learning algorithm is to use this labelled dataset to train a model that takes a feature vector **x** as input and output a label that best matches this feature vector.
+The dataset is a collection of labelled examples, each example **x** is a feature vector. The goal of a supervised machine learning algorithm is to use this labelled dataset to train a model that takes a feature vector x as input and output a label that best matches this feature vector.
 
 **Unsupervised Learning:**
 
@@ -82,7 +82,11 @@ Your model is overfitting when you have high variance, the model predicts well t
 
 ![3 graphs showing a polynomial regression with different polynomial degrees, resulting in underfitting, perfect fit and overfitting](https://scikit-learn.org/stable/_images/sphx_glr_plot_underfitting_overfitting_001.png "Underfitting vs Overfitting")
 
+The above image shows three graphs, the first is a linear function trying to approximate to part of a cosine function, it isn't fitting very well - we can say it is underfitting (high bias). The linear function (polynomial of degree 1) is not complex enough to fit to the training examples. 
 
+The second graph shows a polynomial function, of degree 4, trying to approximate to the part of the cosine function, we can see it fits well - it approximates almost perfectly. 
+
+The third graph shows another polynomial function, of degree 15, trying to approximate to the part of the cosine function, we can see it fits poorly, it is learning the noise in the data and overfitting (high variance), trying to fit to every single point. The polynomial of degree 15 is too complex for the training data it is being trained on.
 
 ### 7. How would you deal with a model that appears to be overfitting?
 
