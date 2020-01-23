@@ -56,7 +56,19 @@ $$ min(\mathbf w,b)\ \left[\sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda |
 
 *The following comes from Peter Bloems* [*blog post*](http://www.peterbloem.nl/blog/transformers) *on Transformers (the best I have found)*
 
-**Self-attention** is a sequence-to-sequence operation: a sequence of vectors go in and a sequence of vectors come out. The input vectors can be X1 to Xn and the corresponding output vectors can be Y1 to Yn.  The output vector Yn is produced by applying the self-attention operation of a weighted average across all of the input vectors. There is a weight W that is not a traditional weight parameter like in a neural network but is rather derived from a function over Xi and Xj. The simplest option for the function is the dot product. The dot product can give a value anywhere from negative to positive infinity, so a softmax is applied to scale the values between [0, 1], ensuring they sum up to 1 over the whole sequence.
+**Self-attention** is a sequence-to-sequence operation: a sequence of vectors goes in and a sequence of vectors comes out. The input vectors can be $x_1, \ x_2,\ ..., \ x_n $  and the corresponding output vectors can be $y_1, \ y_2, \ ..., \ y_n $. The output vector $y_i$ is produced by applying the self-attention operation of a weighted average across all of the input vectors:
+
+$$y_i = \sum_j w_{ij}x_j$$
+
+$j$ indexes over the whole sequence and the weights sum to $\frac{1}{j}$
+
+ The weight $w_{ij}$ that is not a traditional weight parameter like in a neural network but is rather derived from a function over $x_i$ and $x_j$. The simplest option for the function is the dot product. 
+
+$$w'_{ij} = x_i \cdot x_j$$
+
+The dot product can give a value anywhere from negative and positive infinity, so a softmax is applied to scale the values between [0, 1], ensuring they sum to 1 over the whole sequence:
+
+$$w_{ij} = \frac{\exp{w'_{ij}}}{\sum_j \exp{w'_{ij}}}$$
 
 ### 5. How can you deal with class imbalance?
 
