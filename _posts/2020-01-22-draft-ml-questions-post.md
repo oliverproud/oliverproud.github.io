@@ -184,7 +184,7 @@ References:
 
 [1] ([The Hundred Page Machine Learning Book](http://themlbook.com)) 
 
-[2] ([Transformers From Scratch | Peter Bloem](http://www.peterbloem.nl/blog/transformers)) 
+[2] ([Transformers From Scratch - Peter Bloem](http://www.peterbloem.nl/blog/transformers)) 
 
 [3] ([Underfitting vs. Overfitting - scikit-learn documentation](https://bit.ly/3aMY73s))
 
