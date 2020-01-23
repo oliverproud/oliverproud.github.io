@@ -82,7 +82,7 @@ Your model is overfitting when you have high variance, the model predicts well t
 
 <figure>
 	<img src="https://scikit-learn.org/stable/_images/sphx_glr_plot_underfitting_overfitting_001.png" alt="3 graphs showing a polynomial regression with different polynomial degrees, resulting in underfitting, almost perfect fit and overfitting" title="Underfitting vs Overfitting" style="zoom:72%;" />
-	<figcaption>Image from sci-kit learn documentation </figcaption>
+	<figcaption style="font-size:10px; text-align:center;">Image from sci-kit learn documentation </figcaption>
 </figure>
 
 The above image shows three graphs, the first is a linear function trying to approximate to part of a cosine function, it isn't fitting very well - we can say it is underfitting (high bias). The linear function (polynomial of degree 1) is not complex enough to fit to the training examples. 
