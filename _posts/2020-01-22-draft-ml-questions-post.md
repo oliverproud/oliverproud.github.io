@@ -10,7 +10,7 @@ categories: draft
 
 **Supervised Learning:**
 
-The dataset is a collection of labelled examples, each example **x** is a feature vector. The goal of a supervised machine learning algorithm is to use this labelled dataset to train a model that takes a feature vector x as input and output a label that best matches this feature vector.
+The dataset is a collection of labelled examples, each example **x** is a feature vector. The goal of a supervised machine learning algorithm is to use this labelled dataset to train a model that takes a feature vector **x** as input and output a label that best matches this feature vector.
 
 **Unsupervised Learning:**
 
