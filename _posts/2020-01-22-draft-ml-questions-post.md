@@ -166,5 +166,6 @@ Such improvements include:
 
 - ReLU activation function
 - LSTM, GRU
+- Skip connections in residual networks
 - Transformers
 - New optimisers such as Adam, RAdam and AdaMod
