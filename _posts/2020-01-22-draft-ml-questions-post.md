@@ -50,7 +50,7 @@ $$ min(\mathbf w,b)\ \left[\sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda |
 
 Also known as ridge regularisation, is a way of regularising a model's weights by adding a penalising term to the loss function. This term again contains a tuneable hyperparameter that is multiplied by the square of the weights. L2 regularisation is also differentiable so it can be used with gradient descent during training to optimise the loss function.
 
-$$ min(\mathbf w,b)\ \left[\sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda \mathbf ||w_i^2|| \right], \ where \ ||\mathbf w||^2 = \sum_{j=1}^D (w^{(j)})^2 $$
+$$ min(\mathbf w,b)\ \left[\sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda \mathbf \ ||w_i||^2 \right], \ where \ ||\mathbf w||^2 = \sum_{j=1}^D (w^{(j)})^2 $$
 
 ### 4. How Does the Self-attention mechanism work?
 
