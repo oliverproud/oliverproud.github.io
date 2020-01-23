@@ -35,7 +35,7 @@ A model has **high bias** if it predicts the training data labels poorly, with a
 
 **Variance:**
 
-The **variance** in a model is its [sensitivity to small fluctuations][1] in the training data.
+The **variance** in a model is its sensitivity to small fluctuations [1] in the training data.
 
 A model has **low variance** if it predicts a little better on the validation data than the training data.
 
@@ -49,7 +49,7 @@ The problem of finding a model that has a low bias (won’t underfit) and low va
 
 **L1 regularisation**:
 
-Also known as lasso regularisation, is a way of regularising a model's weights by adding a penalising term to the loss function. This term contains a hyperparameter that is multiplied by the absolute value of the weights. When this hyperparameter is greater than zero it tends to lead to less important features being essentially turned off with their weights getting close to zero, leading to a sparse, less complex model. [L1 regression is essentially a feature selector][1] that decides which features are important for correct prediction and which are not.
+Also known as lasso regularisation, is a way of regularising a model's weights by adding a penalising term to the loss function. This term contains a hyperparameter that is multiplied by the absolute value of the weights. When this hyperparameter is greater than zero it tends to lead to less important features being essentially turned off with their weights getting close to zero, leading to a sparse, less complex model. L1 regression is essentially a feature selector [1] that decides which features are important for correct prediction and which are not.
 
 $$ min(\mathbf w,b)\ \left[\sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda |\mathbf w_i| \right], \ where \ |\mathbf w| = \sum_{j=1}^D |w^{(j)}| $$
 
@@ -61,7 +61,7 @@ $$ min(\mathbf w,b)\ \left[\sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda |
 
 ### 4. How Does the Self-attention mechanism work?
 
-*The following comes from Peter Bloems [blog post][2] on Transformers (the best I have found)*
+*The following comes from Peter Bloems blog post [2] on Transformers (the best I have found)*
 
 **Self-attention** is a sequence-to-sequence operation: a sequence of vectors goes in and a sequence of vectors comes out. The input vectors can be $$x_1, \ x_2,\ ..., \ x_n $$  and the corresponding output vectors can be $$y_1, \ y_2, \ ..., \ y_n $$. The output vector $$y_i$$ is produced by applying the self-attention operation of a weighted average across all of the input vectors:
 
@@ -101,16 +101,16 @@ There are a few main ways to account for class imbalance:
 
 Your model is underfitting when you have a high bias, the model is predicting poorly the labels of the training data, to determine whether your model is underfitting you can compare your training accuracy against your validation accuracy, if both are showing a lows then your model is most likely underfitting to the data.
 
-**[Overfitting][1]:**
+**Overfitting:**
 
-Your model is overfitting when you have high variance, the model predicts well the labels of the training data but predicts poorly on your validation/test data, to determine whether your model is overfitting you can compare your training error against your validation error, if the training error appears to be much lower than the validation error, then your model is most likely overfitting to the training data.
+Your model is overfitting when you have high variance, the model predicts well the labels of the training data but predicts poorly on your validation/test data [1], to determine whether your model is overfitting you can compare your training error against your validation error, if the training error appears to be much lower than the validation error, then your model is most likely overfitting to the training data.
 
 <figure>
 	<img src="https://scikit-learn.org/stable/_images/sphx_glr_plot_underfitting_overfitting_001.png" alt="3 graphs showing a polynomial regression with different polynomial degrees, resulting in underfitting, almost perfect fit and overfitting" title="Underfitting vs Overfitting" style="zoom:72%;" />
 	<figcaption style="font-size:10px; text-align:center;">Image from sci-kit learn documentation </figcaption>
 </figure>
 
-[The above image shows three graphs][3], the first is a linear function trying to approximate to part of a cosine function, it isn't fitting very well - we can say it is underfitting (high bias). The linear function (polynomial of degree 1) is not complex enough to fit to the training examples. 
+The above image shows three graphs [3], the first is a linear function trying to approximate to part of a cosine function, it isn't fitting very well - we can say it is underfitting (high bias). The linear function (polynomial of degree 1) is not complex enough to fit to the training examples. 
 
 The second graph shows a polynomial function, of degree 4, trying to approximate to the part of the cosine function, we can see it fits well - almost perfectly. 
 
@@ -182,7 +182,9 @@ Cross-validation involves the use of $$k$$ folds - subsets of your training data
 
 References: 
 
-[1]: http://themlbook.com	"The Hundred Page Machine Learning Book"
-[2]: http://www.peterbloem.nl/blog/transformers	"Transformers From Scratch | Peter Bloem"
-[3]: https://bit.ly/3aMY73s	"Underfitting vs. Overfitting"
+[1] http://themlbook.com The Hundred Page Machine Learning Book
+
+[2] http://www.peterbloem.nl/blog/transformers Transformers From Scratch | Peter Bloem
+
+[3] https://bit.ly/3aMY73s Underfitting vs. Overfitting - scikit-learn documentation
 
