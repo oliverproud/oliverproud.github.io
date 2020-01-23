@@ -62,7 +62,7 @@ $$y_i = \sum_j w_{ij}x_j$$
 
 $$j$$ indexes over the whole sequence and the weights sum to $$\frac{1}{j}$$
 
- The weight $$w_{ij}$$ that is not a traditional weight parameter like in a neural network but is rather derived from a function over $$x_i$$ and $$x_j$$. The simplest option for the function is the dot product. 
+ The weight $$w_{ij}$$ is not a traditional weight parameter like in a neural network but is rather derived from a function over $$x_i$$ and $$x_j$$. The simplest option for the function is the dot product. 
 
 $$w'_{ij} = x_i \cdot x_j$$
 
