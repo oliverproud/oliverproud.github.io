@@ -17,9 +17,9 @@ The dataset is a collection of labelled examples, each example **x** is a featur
 The dataset is a collection of unlabelled examples, where again **x** is a feature vector. The goal of an unsupervised machine learning algorithm is to use the unlabelled dataset to find some previously unknown pattern, ways this can be used are: 
 
 - Clustering
-  - For clustering the model returns the ID of the cluster for each feature in the dataset
+  - For clustering, the model returns the ID of the cluster for each feature in the dataset
 - Anomaly (outlier) Detection
-  - In anomaly detection the model's output is a value describing how different the example is from the usual examples
+  - In anomaly detection, the model's output is a value describing how different the example is from the usual examples
 - Dimensionality Reduction
   - In dimensionality reduction, the output vector has fewer features than the input vector.
 
@@ -69,7 +69,7 @@ $$y_i = \sum_j w_{ij}x_j$$
 
 $$j$$ indexes over the whole sequence and the weights sum to $$\frac{1}{j}$$
 
- The weight $$w_{ij}$$ is not a traditional weight parameter like in a neural network, but derived from a function over $$x_i$$ and $$x_j$$. The simplest option for the function is the dot product:
+ The weight $$w_{ij}$$ is not a traditional weight parameter like in a neural network but derived from a function over $$x_i$$ and $$x_j$$. The simplest option for the function is the dot product:
 
 $$w'_{ij} = x_i \cdot x_j$$
 
@@ -139,3 +139,32 @@ If you have confirmed your model is overfitting then you can try the following t
 - Reduce the complexity of your model, i.e. for a deep neural network use fewer layers or hidden units.
 - Reduce the dimensionality of your data with Principal Component Analysis (PCA) or UMAP.
 
+### 8. What are exploding and vanishing gradients?
+
+**Exploding gradients:**
+
+The problem of exploding gradients can arise when training deep neural networks, the parameters of these networks are updated during gradient descent using backpropagation. This problem arises because of the nature of backpropagation, the calculated gradients are backpropagated through the network all the way to the first layer,  this means the gradients go through many matrix multiplications, if the gradients are large (>1) then these multiplications cause the gradients to get exponentially bigger with the number of layers until they explode, resulting in NaN values. 
+
+**Vanishing Gradients:**
+
+The problem of vanishing gradients, again, can occur when training deep neural networks. Vanishing gradients can occur when the calculated gradients are very small (<1) and these small gradients are, again, getting multiplied through the layers which cause the gradient to diminish exponentially with the number of layers, causing early layers to train very slowly because the gradient that reaches them is very small. 
+
+### 9. How can you deal with exploding and vanishing gradients?
+
+**Dealing with exploding gradients:**
+
+You can apply simple techniques such as:
+
+- Gradient clipping - a threshold on the gradients
+- L1 or L2 regularisation
+
+**Dealing with vanishing gradients:**
+
+Vanishing gradients used to be an intractable problem for deep neural networks but these days most network and activation function implementations are effective at training very deep neural networks. 
+
+Such improvements include:
+
+- ReLU activation function
+- LSTM, GRU
+- Transformers
+- New optimisers such as Adam, RAdam and AdaMod
