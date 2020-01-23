@@ -46,7 +46,7 @@ Also known as lasso regularisation, is a way of regularising a model's weights b
 
 $$ min(\mathbf w,b)\ \left[\sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda |\mathbf w_i| \right] $$
 
-where  $|\mathbf w| \sum_{j=1}^D |w^{(j)}|$
+where  $$|\mathbf w| \sum_{j=1}^D |w^{(j)}|$$
 
 **L2 regularisation**:
 
