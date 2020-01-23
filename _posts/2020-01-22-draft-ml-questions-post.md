@@ -70,6 +70,8 @@ The dot product can give a value anywhere from negative and positive infinity, s
 
 $$w_{ij} = \frac{\exp{w'_{ij}}}{\sum_j \exp{w'_{ij}}}$$
 
+And that is the basic operation of self-attention
+
 ### 5. How can you deal with class imbalance?
 
 There are a few main ways to account for class imbalance:
