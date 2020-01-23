@@ -14,7 +14,14 @@ The dataset is a collection of labelled examples, each example **x** is a featur
 
 **Unsupervised Learning:**
 
-The dataset is a collection of unlabelled examples, where again **x** is a feature vector. The goal of an unsupervised machine learning algorithm is to use the unlabelled dataset to find some previously unknown pattern, ways this can be used are: clustering, anomaly (outlier) detection and dimensionality reduction. For clustering, the model returns the ID of the cluster for each feature in the dataset, for anomaly detection the model's output is a value describing how different the example is from the usual examples, and finally, in dimensionality reduction, the output vector has fewer features than the input vector.
+The dataset is a collection of unlabelled examples, where again **x** is a feature vector. The goal of an unsupervised machine learning algorithm is to use the unlabelled dataset to find some previously unknown pattern, ways this can be used are: 
+
+- Clustering
+  - For clustering the model returns the ID of the cluster for each feature in the dataset
+- Anomaly (outlier) Detection
+  - In anomaly detection the model's output is a value describing how different the example is from the usual examples
+- Dimensionality Reduction
+  - In dimensionality reduction, the output vector has fewer features than the input vector.
 
 ### 2. What is the bias-variance trade-off?
 
@@ -128,9 +135,7 @@ If you have confirmed your model is overfitting then you can try the following t
   - Batch Normalisation (this is not actually a form of regularisation, but routinely has the effect of it)
   - Dropout
   - Early stopping (don't do this one, it's just an example).
-
 - Get more training data, your model may be the right one but has so little data it learns its features so well.
-
 - Reduce the complexity of your model, i.e. for a deep neural network use fewer layers or hidden units.
-
 - Reduce the dimensionality of your data with Principal Component Analysis (PCA) or UMAP.
+
