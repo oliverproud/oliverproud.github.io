@@ -182,9 +182,9 @@ Cross-validation involves the use of $$k$$ folds - subsets of your training data
 
 References: 
 
-[1] http://themlbook.com The Hundred Page Machine Learning Book
+[1] ([The Hundred Page Machine Learning Book](http://themlbook.com)) 
 
-[2] http://www.peterbloem.nl/blog/transformers Transformers From Scratch | Peter Bloem
+[2] ([Transformers From Scratch | Peter Bloem](http://www.peterbloem.nl/blog/transformers)) 
 
-[3] https://bit.ly/3aMY73s Underfitting vs. Overfitting - scikit-learn documentation
+[3] ([Underfitting vs. Overfitting - scikit-learn documentation](https://bit.ly/3aMY73s))
 
