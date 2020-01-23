@@ -56,7 +56,7 @@ $$ min(\mathbf w,b)\ \left[\sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda |
 
 *The following comes from Peter Bloems* [*blog post*](http://www.peterbloem.nl/blog/transformers) *on Transformers (the best I have found)*
 
-**Self-attention** is a sequence-to-sequence operation: a sequence of vectors goes in and a sequence of vectors comes out. The input vectors can be \\x_1, \ x_2,\ ..., \ x_n \\  and the corresponding output vectors can be $y_1, \ y_2, \ ..., \ y_n $. The output vector $y_i$ is produced by applying the self-attention operation of a weighted average across all of the input vectors:
+**Self-attention** is a sequence-to-sequence operation: a sequence of vectors goes in and a sequence of vectors comes out. The input vectors can be $x_1, \ x_2,\ ..., \ x_n$  and the corresponding output vectors can be $y_1, \ y_2, \ ..., \ y_n $. The output vector $y_i$ is produced by applying the self-attention operation of a weighted average across all of the input vectors:
 
 $$y_i = \sum_j w_{ij}x_j$$
 
