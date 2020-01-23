@@ -139,11 +139,11 @@ If you have confirmed your model is overfitting then you can try the following t
 - Reduce the complexity of your model, i.e. for a deep neural network use fewer layers or hidden units.
 - Reduce the dimensionality of your data with Principal Component Analysis (PCA) or UMAP.
 
-### 8. What are exploding and vanishing gradients?
+### 8. What is exploding and vanishing gradients?
 
 **Exploding gradients:**
 
-The problem of exploding gradients can arise when training deep neural networks, the parameters of these networks are updated during gradient descent using backpropagation. This problem arises because of the nature of backpropagation, the calculated gradients are backpropagated through the network all the way to the first layer,  this means the gradients go through many matrix multiplications, if the gradients are large (>1) then these multiplications cause the gradients to get exponentially bigger with the number of layers until they explode, resulting in NaN values. 
+The problem of exploding gradients can arise when training deep neural networks, the parameters of these networks are updated during gradient descent using backpropagation. This problem arises because of the nature of backpropagation, the calculated gradients are backpropagated through the network to the first layer,  this means the gradients go through many matrix multiplications, if the gradients are large (>1) then these multiplications cause the gradients to get exponentially bigger with the number of layers until they explode, resulting in NaN values. 
 
 **Vanishing Gradients:**
 
@@ -169,3 +169,12 @@ Such improvements include:
 - Skip connections in residual networks
 - Transformers
 - New optimisers such as Adam, RAdam and AdaMod
+
+
+
+### 10. What is cross-validation and when would you use it?
+
+Cross-validation is a resampling technique that can be seen as a stand-in for a validation set when you have too few data to split into a training, validation and test set. Cross-validation can be used to determine which hyperparameters work best for your network. With cross-validation you will have a training set and a test set, leaving most of the data for the training set. 
+
+Cross-validation involves the use of $$k$$ folds - subsets of your training data, each of the same size. Five-fold cross-validation is the most common value for $$ k $$, with five-fold cross-validation, the training data is split randomly into five folds $$F_1, F_2, ..., F_5$$. From here five new models are trained, the first model $$ f_1 $$ is trained on folds $$ F_2, F_3, F_4 $$ and $$ F_5 $$ and fold $$F_1$$ is used as the validation set for the model. Then model two $$ f_2 $$ is trained on folds $$ F_1, F_3, F_4 $$ and $$ F_5 $$, with fold $$F_2$$ being used as the validation set. This continues for the remaining models and subsets until you have trained and validated all five on your metric. Then you can average over the five validation results and compute the value.  
+
