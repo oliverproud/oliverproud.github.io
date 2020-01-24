@@ -51,7 +51,9 @@ The problem of finding a model that has a low bias (won’t underfit) and low va
 
 Also known as lasso regularisation, is a way of regularising a model's weights by adding a penalising term to the loss function. This term contains a hyperparameter that is multiplied by the absolute value of the weights. When this hyperparameter is greater than zero it tends to lead to less important features being essentially turned off with their weights getting close to zero, leading to a sparse, less complex model. L1 regression is essentially a feature selector [1] that decides which features are important for correct prediction and which are not.
 
-$$ min(\mathbf w,b)\ \left[\sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda |\mathbf w_i| \right], \ where \ |\mathbf w| = \sum_{j=1}^D |w^{(j)}| $$
+$$ min(\mathbf w,b)\ \left[\sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda |\mathbf w_i| \right],  $$
+
+$$ where \ |\mathbf w| = \sum_{j=1}^D |w^{(j)}| $$
 
 **L2 regularisation**:
 
