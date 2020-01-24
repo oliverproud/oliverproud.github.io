@@ -37,9 +37,9 @@ A model has **high bias** if it has low accuracy in predicting the labels of the
 
 The **variance** in a model is its sensitivity to small fluctuations [1] in the training data.
 
-A model has **low variance** if it predicts the labels of the validation data a little better than the training data.
+A model has **low variance** if it has a higher accuracy in predicting the labels of the validation/test data compared to the training data.
 
-A model has **high variance** if it predicts poorly on the validation/test data but very well on the training data.
+A model has **high variance** if it has a lower accuracy in predicting the labels of the validation/test data compared to the training data.
 
 **Bias-variance trade-off:**
 
