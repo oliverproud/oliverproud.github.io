@@ -29,15 +29,15 @@ The dataset is a collection of unlabelled examples, where again **x** is a featu
 
 The **bias** in a model is how well the model fits the training data, i.e. the training accuracy.
 
-A model has **low bias** if it predicts the training data labels well, with low error.
+A model has **low bias** if it has high accuracy in predicting the labels of the training data.
 
-A model has **high bias** if it predicts the training data labels poorly, with a high error.
+A model has **high bias** if it has low accuracy in predicting the labels of the training data.
 
 **Variance:**
 
 The **variance** in a model is its sensitivity to small fluctuations [1] in the training data.
 
-A model has **low variance** if it predicts a little better on the validation data than the training data.
+A model has **low variance** if it predicts the labels of the validation data a little better than the training data.
 
 A model has **high variance** if it predicts poorly on the validation/test data but very well on the training data.
 
@@ -57,7 +57,9 @@ $$ min(\mathbf w,b)\ \left[\sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda |
 
 Also known as ridge regularisation, is a way of regularising a model's weights by adding a penalising term to the loss function. This term again contains a tuneable hyperparameter that is multiplied by the square of the weights. L2 regularisation is also differentiable so it can be used with gradient descent during training to optimise the loss function.
 
-$$ min(\mathbf w,b)\ \left[\sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda ||\mathbf w_i||^2 \right], \ where \ ||\mathbf w||^2 = \sum_{j=1}^D (w^{(j)})^2 $$
+$$ min(\mathbf w,b)\ \left[\sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda ||\mathbf w_i||^2 \right], $$
+
+$$ where \ ||\mathbf w||^2 = \sum_{j=1}^D (w^{(j)})^2 $$
 
 ### 4. How Does the Self-attention mechanism work?
 
@@ -99,7 +101,7 @@ There are a few main ways to account for class imbalance:
 
 **Underfitting:**
 
-Your model is underfitting when you have a high bias, the model is predicting poorly the labels of the training data, to determine whether your model is underfitting you can compare your training accuracy against your validation accuracy, if both are showing a lows then your model is most likely underfitting to the data.
+Your model is underfitting when you have a high bias, the model is predicting poorly the labels of the training data, to determine whether your model is underfitting you can compare your training accuracy against your validation accuracy, if both are showing low accuracy then your model is most likely underfitting to the data.
 
 **Overfitting:**
 
@@ -135,8 +137,8 @@ If you have confirmed your model is overfitting then you can try the following t
   - Batch Normalisation (this is not actually a form of regularisation, but routinely has the effect of it)
   - Dropout
   - Early stopping (don't do this one, it's just an example).
-- Get more training data, your model may be the right one but has so little data it learns its features so well.
-- Reduce the complexity of your model, i.e. for a deep neural network use fewer layers or hidden units.
+- Get more training data, your network may be the right one but has so little data it learns the noise in its features so well.
+- Reduce the complexity of your model, i.e. for a deep neural network use fewer layers/hidden units.
 - Reduce the dimensionality of your data with Principal Component Analysis (PCA) or UMAP.
 
 ### 8. What is exploding and vanishing gradients?
