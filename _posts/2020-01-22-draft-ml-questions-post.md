@@ -138,7 +138,7 @@ If you have confirmed your model is overfitting then you can try the following t
   - L1 and L2 regularisation
   - Batch Normalisation (this is not actually a form of regularisation, but routinely has the effect of it)
   - Dropout
-  - Early stopping (don't do this one, it's just an example).
+  - Early stopping
 - Get more training data, your network may be the right one but has so little data it learns the noise in its features so well.
 - Reduce the complexity of your model, i.e. for a deep neural network use fewer layers/hidden units.
 - Reduce the dimensionality of your data with Principal Component Analysis (PCA) or UMAP.
