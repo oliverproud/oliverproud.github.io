@@ -6,6 +6,8 @@ summary: A frequently updated list of commonly asked ML interview questions.
 categories: draft
 ---
 
+***Below is a list of common data science/machine learning questions you may be asked in an interview. A question about the self-attention mechanism may be rare, however, I believe it will become more common as it is such an important operation integral to many architectures***
+
 ### 1. What is the difference between supervised and unsupervised machine learning?
 
 **Supervised Learning:**
@@ -51,7 +53,7 @@ The problem of finding a model that has a low bias (won’t underfit) and low va
 
 Also known as lasso regularisation, is a way of regularising a model's weights by adding a penalising term to the loss function. This term contains a hyperparameter that is multiplied by the absolute value of the weights. When this hyperparameter is greater than zero it tends to lead to less important features being essentially turned off with their weights getting close to zero, leading to a sparse, less complex model. L1 regression is essentially a feature selector [1] that decides which features are important for correct prediction and which are not.
 
-$$ min(\mathbf w,b)\ \left[\sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda |\mathbf w_i| \right],  $$
+$$ min(\mathbf w,b)\ \left[\frac{1}n \sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda |\mathbf w_i| \right],  $$
 
 $$ where \ |\mathbf w| = \sum_{j=1}^D |w^{(j)}| $$
 
@@ -59,7 +61,7 @@ $$ where \ |\mathbf w| = \sum_{j=1}^D |w^{(j)}| $$
 
 Also known as ridge regularisation, is a way of regularising a model's weights by adding a penalising term to the loss function. This term again contains a tuneable hyperparameter that is multiplied by the square of the weights. L2 regularisation is also differentiable so it can be used with gradient descent during training to optimise the loss function.
 
-$$ min(\mathbf w,b)\ \left[\sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda ||\mathbf w_i||^2 \right], $$
+$$ min(\mathbf w,b)\ \left[\frac{1}n \sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda ||\mathbf w_i||^2 \right], $$
 
 $$ where \ ||\mathbf w||^2 = \sum_{j=1}^D (w^{(j)})^2 $$
 
@@ -138,7 +140,7 @@ If you have confirmed your model is overfitting then you can try the following t
   - L1 and L2 regularisation
   - Batch Normalisation (this is not actually a form of regularisation, but routinely has the effect of it)
   - Dropout
-  - Early stopping
+  - Early stopping (don't do this one, it's just an example).
 - Get more training data, your network may be the right one but has so little data it learns the noise in its features so well.
 - Reduce the complexity of your model, i.e. for a deep neural network use fewer layers/hidden units.
 - Reduce the dimensionality of your data with Principal Component Analysis (PCA) or UMAP.
