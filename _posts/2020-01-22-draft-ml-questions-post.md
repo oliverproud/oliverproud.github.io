@@ -51,7 +51,7 @@ The problem of finding a model that has a low bias (won’t underfit) and low va
 
 **L1 regularisation**:
 
-Also known as lasso regularisation, is a way of regularising a model's weights by adding a penalising term to the loss function. This term contains a hyperparameter that is multiplied by the absolute value of the weights. When this hyperparameter is greater than zero it tends to lead to less important features being essentially turned off with their weights getting close to zero, leading to a sparse, less complex model. L1 regression is essentially a feature selector [1] that decides which features are important for correct prediction and which are not.
+Also known as lasso regression, is a way of regularising a model's weights by adding a penalising term to the loss function. This term contains a hyperparameter that is multiplied by the absolute value of the weights. When this hyperparameter is greater than zero it tends to lead to less important features being essentially turned off with their weights getting close to zero, leading to a sparse, less complex model. L1 regression is essentially a feature selector [1] that decides which features are important for correct prediction and which are not.
 
 $$ min(\mathbf w,b)\ \left[\frac{1}n \sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda |\mathbf w_i| \right],  $$
 
@@ -59,7 +59,7 @@ $$ where \ |\mathbf w| = \sum_{j=1}^D |w^{(j)}| $$
 
 **L2 regularisation**:
 
-Also known as ridge regularisation, is a way of regularising a model's weights by adding a penalising term to the loss function. This term again contains a tuneable hyperparameter that is multiplied by the square of the weights. L2 regularisation is also differentiable so it can be used with gradient descent during training to optimise the loss function.
+Also known as ridge regression, is a way of regularising a model's weights by adding a penalising term to the loss function. This term again contains a tuneable hyperparameter that minimises coefficients using least squares, because of this the coefficients are minimised but do not minimise to zero, unlike L1 regularisation. L2 regularisation is also differentiable so it can be used with gradient descent during training to optimise the loss function.
 
 $$ min(\mathbf w,b)\ \left[\frac{1}n \sum_{i=1}^n (f(\mathbf X_i) - y_i)^2 \ + \ \lambda ||\mathbf w_i||^2 \right], $$
 
@@ -194,3 +194,4 @@ References:
 
 [3] ([Underfitting vs. Overfitting - scikit-learn documentation](https://bit.ly/3aMY73s))
 
+[4] ([Least squares - Wikipedia](https://en.wikipedia.org/wiki/Least_squares#Regularization)
