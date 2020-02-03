@@ -3,7 +3,7 @@ layout: post
 title: ML/Data Science Interview Questions
 date: 2020-01-22
 summary: A frequently updated list of commonly asked ML interview questions.
-categories: draft
+categories: ML
 ---
 
 ***Below is a list of common data science/machine learning questions you may be asked in an interview. A question about the self-attention mechanism may be rare, however, I believe it will become more common as it is such an important operation integral to many architectures***
