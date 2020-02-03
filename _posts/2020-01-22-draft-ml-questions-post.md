@@ -105,11 +105,11 @@ There are a few main ways to account for class imbalance:
 
 **Underfitting:**
 
-Your model is underfitting when you have a high bias, the model is predicting poorly the labels of the training data, to determine whether your model is underfitting you can compare your training accuracy against your validation accuracy, if both are showing low accuracy then your model is most likely underfitting to the data.
+Your model is underfitting when you have a high bias, the model is predicting poorly the labels of the training data. To determine whether your model is underfitting you can compare your training accuracy against your validation accuracy, if both are showing low accuracy then your model is most likely underfitting to the data.
 
 **Overfitting:**
 
-Your model is overfitting when you have high variance, the model predicts well the labels of the training data but predicts poorly on your validation/test data, to determine whether your model is overfitting you can compare your training error against your validation error, if the training error appears to be much lower than the validation error, then your model is most likely overfitting to the training data.
+Your model is overfitting when you have high variance, the model does a good job at predicting the labels of the training data but predicts poorly on your validation/test data. To determine whether your model is overfitting you can compare your training error against your validation error, if the training error appears to be much lower than the validation error, then your model is most likely overfitting to the training data.
 
 <figure>
 	<img src="https://scikit-learn.org/stable/_images/sphx_glr_plot_underfitting_overfitting_001.png" alt="3 graphs showing a polynomial regression with different polynomial degrees, resulting in underfitting, almost perfect fit and overfitting" title="Underfitting vs Overfitting" style="zoom:72%;" />
@@ -129,7 +129,7 @@ The third graph shows another polynomial function, of degree 15, trying to appro
 If you know your model is underfitting then there are a few things you can do to change it:
 
 - Find a more complex model, usually, the current model is too simple for the data.
-- Find more informative features from your data, perhaps your current features aren't powerful enough to let the model extract meaningful insight.
+- Find more informative features from your data, perhaps your current features aren't powerful enough to let the model learn any meaningful insight.
 
 **Dealing with overfitting:**
 
