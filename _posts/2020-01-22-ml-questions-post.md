@@ -144,7 +144,7 @@ If you have confirmed your model is overfitting then you can try the following t
 - Get more training data, your network may be the right one but has so little data it learns the noise in the data.
   - Data augmentation is a cheap way of getting more training data by adapting the features of the original example so that you end up with a new example that is slightly different from the original but different enough that the model can learn from it. 
 - Reduce the complexity of your model, i.e. for a deep neural network use fewer layers/hidden units.
-- Reduce the dimensionality of your data by removing features that are not important for prediction - Principal Component Analysis (PCA) or UMAP.
+- Reduce the dimensionality of your data by removing features that are not important for prediction - Principal Component Analysis (PCA), UMAP, t-SNE. Random Forests and Gradient Boosting Machines (built in feature importance).
 
 ### 8. What is exploding and vanishing gradients?
 
