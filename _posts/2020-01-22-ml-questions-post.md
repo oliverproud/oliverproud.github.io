@@ -3,7 +3,7 @@ layout: post
 title: ML/Data Science Interview Questions
 date: 2020-01-22
 summary: A frequently updated list of commonly asked ML interview questions.
-categories: ML
+categories: draft
 ---
 
 ***Below is a list of common data science/machine learning questions you may be asked in an interview. A question about the self-attention mechanism may be rare, however, I believe it will become more common as it is such an important operation integral to many architectures***
@@ -12,18 +12,18 @@ categories: ML
 
 **Supervised Learning:**
 
-The dataset is a collection of labelled examples, each example $$x_i$$ is a feature vector. The goal of a supervised machine learning algorithm is to use this labelled dataset to train a model that takes a feature vector $$x_i$$ as input and output a label or labels that best match this feature vector.
+Supervised learning involves training a machine learning algorithm on a dataset of labeled examples, with each example being a feature vector $$x_i$$ with a corresponding label $$y_i$$. The trained algorithm will take a feature vector $$x_i$$ as input and produce a label or labels that best match this input vector. 
 
 **Unsupervised Learning:**
 
-The dataset is a collection of unlabelled examples, where again $$x_i$$ is a feature vector. The goal of an unsupervised machine learning algorithm is to use the unlabelled dataset to find some previously unknown pattern, ways this can be used are: 
+Unsupervised learning involes using a dataset of unlabled examples, where again $$x_i$$ is a feature vector that does not have a corresponding label and the goal of the unsupervised algorithm is to find some pattern in the data that was previously unkown. Ways this can be used are [1]:
 
 - Clustering
   - For clustering, the model returns the ID of the cluster for each feature in the dataset
 - Anomaly (outlier) Detection
   - In anomaly detection, the model's output is a value describing how different the example is from the usual examples
 - Dimensionality Reduction
-  - In dimensionality reduction, the output vector has fewer features than the input vector. [1]
+  - In dimensionality reduction, the output vector has fewer features than the input vector. 
 
 ### 2. What is the bias-variance trade-off?
 
@@ -144,7 +144,7 @@ If you have confirmed your model is overfitting then you can try the following t
 - Get more training data, your network may be the right one but has so little data it learns the noise in the data.
   - Data augmentation is a cheap way of getting more training data by adapting the features of the original example so that you end up with a new example that is slightly different from the original but different enough that the model can learn from it. 
 - Reduce the complexity of your model, i.e. for a deep neural network use fewer layers/hidden units.
-- Reduce the dimensionality of your data by removing features that are not important for prediction - Principal Component Analysis (PCA), UMAP, t-SNE. Random Forests and Gradient Boosting Machines (built in feature importance).
+- Reduce the dimensionality of your data by removing features that are not important for prediction - Principal Component Analysis (PCA) or UMAP.
 
 ### 8. What is exploding and vanishing gradients?
 
