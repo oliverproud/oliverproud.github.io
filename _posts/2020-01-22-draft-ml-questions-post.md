@@ -195,4 +195,4 @@ References:
 
 [3] ([Underfitting vs. Overfitting - scikit-learn documentation](https://bit.ly/3aMY73s))
 
-[4] ([Least squares - Wikipedia](https://en.wikipedia.org/wiki/Least_squares#Regularization)
+[4] ([Least squares - Wikipedia](https://en.wikipedia.org/wiki/Least_squares#Regularization))
