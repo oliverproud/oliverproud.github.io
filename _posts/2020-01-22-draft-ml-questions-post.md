@@ -12,7 +12,7 @@ categories: draft
 
 **Supervised Learning:**
 
-The dataset is a collection of labelled examples, each example **x** is a feature vector. The goal of a supervised machine learning algorithm is to use this labelled dataset to train a model that takes a feature vector **x** as input and output a label that best matches this feature vector.
+The dataset is a collection of labelled examples, each example **x** is a feature vector. The goal of a supervised machine learning algorithm is to use this labelled dataset to train a model that takes a feature vector **x** as input and output a label or labels that best match this feature vector.
 
 **Unsupervised Learning:**
 
@@ -138,12 +138,13 @@ If you have confirmed your model is overfitting then you can try the following t
 - Regularisation - your model is too complex for the data, it is learning patterns in the data and fitting to the noise. Examples of regularisation are:
 
   - L1 and L2 regularisation
-  - Batch Normalisation (this is not actually a form of regularisation, but routinely has the effect of it)
+  - Batch Normalisation (standardises the output activations of a layer, therefore has a regularising effect)
   - Dropout
-  - Early stopping (don't do this one, it's just an example).
-- Get more training data, your network may be the right one but has so little data it learns the noise in its features so well.
+  - Early stopping
+- Get more training data, your network may be the right one but has so little data it learns the noise in the data.
+  - Data augmentation is a cheap way of getting more training data by adapting the features of the original example so that you end up with a new example that is slightly different from the original but different enough that the model can learn from it. 
 - Reduce the complexity of your model, i.e. for a deep neural network use fewer layers/hidden units.
-- Reduce the dimensionality of your data with Principal Component Analysis (PCA) or UMAP.
+- Reduce the dimensionality of your data by removing features that are not important for prediction - Principal Component Analysis (PCA) or UMAP.
 
 ### 8. What is exploding and vanishing gradients?
 
@@ -171,7 +172,7 @@ Vanishing gradients used to be an intractable problem for deep neural networks b
 Such improvements include:
 
 - ReLU activation function
-- LSTM, GRU
+- LSTMs, GRUs
 - Skip connections in residual networks
 - Transformers
 - New optimisers such as Adam, RAdam and AdaMod
@@ -182,7 +183,7 @@ Such improvements include:
 
 Cross-validation is a resampling technique that can be seen as a stand-in for a validation set when you have too few data to split into a training, validation and test set. Cross-validation can be used to determine which hyperparameters work best for your network. With cross-validation you will have a training set and a test set, leaving most of the data for the training set. 
 
-Cross-validation involves the use of $$k$$ folds - subsets of your training data, each of the same size. Five-fold cross-validation is the most common value for $$ k $$, with five-fold cross-validation, the training data is split randomly into five folds $$F_1, F_2, ..., F_5$$. From here five new models are trained, the first model $$ f_1 $$ is trained on folds $$ F_2, F_3, F_4 $$ and $$ F_5 $$ and fold $$F_1$$ is used as the validation set for the model. Then model two $$ f_2 $$ is trained on folds $$ F_1, F_3, F_4 $$ and $$ F_5 $$, with fold $$F_2$$ being used as the validation set. This continues for the remaining models and subsets until you have trained and validated all five on your metric. Then you can average over the five validation results and compute the value.  
+Cross-validation involves the use of $$k$$ folds - subsets of your training data, each of the same size. Five-fold cross-validation is the most common value for $$ k $$, with five-fold cross-validation, the training data is split randomly into five folds $$F_1, F_2, ..., F_5$$. From here five new models are trained, the first model $$ f_1 $$ is trained on $$k-1$$ folds $$ F_2, F_3, F_4 $$ and $$ F_5 $$ and fold $$F_1$$ is used as the validation set for the model. Then model two $$ f_2 $$ is trained on folds $$ F_1, F_3, F_4 $$ and $$ F_5 $$, with fold $$F_2$$ being used as the validation set. This continues for the remaining models and subsets until you have trained and validated all five on your metric or metrics of choice. Then you can average over the k validation results and compute the final value.  
 
 
 
