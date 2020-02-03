@@ -109,7 +109,7 @@ Your model is underfitting when you have a high bias, the model is predicting po
 
 **Overfitting:**
 
-Your model is overfitting when you have high variance, the model predicts well the labels of the training data but predicts poorly on your validation/test data [1], to determine whether your model is overfitting you can compare your training error against your validation error, if the training error appears to be much lower than the validation error, then your model is most likely overfitting to the training data.
+Your model is overfitting when you have high variance, the model predicts well the labels of the training data but predicts poorly on your validation/test data, to determine whether your model is overfitting you can compare your training error against your validation error, if the training error appears to be much lower than the validation error, then your model is most likely overfitting to the training data.
 
 <figure>
 	<img src="https://scikit-learn.org/stable/_images/sphx_glr_plot_underfitting_overfitting_001.png" alt="3 graphs showing a polynomial regression with different polynomial degrees, resulting in underfitting, almost perfect fit and overfitting" title="Underfitting vs Overfitting" style="zoom:72%;" />
