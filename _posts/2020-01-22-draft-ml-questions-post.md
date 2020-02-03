@@ -23,7 +23,7 @@ The dataset is a collection of unlabelled examples, where again $$x_i$$ is a fea
 - Anomaly (outlier) Detection
   - In anomaly detection, the model's output is a value describing how different the example is from the usual examples
 - Dimensionality Reduction
-  - In dimensionality reduction, the output vector has fewer features than the input vector.
+  - In dimensionality reduction, the output vector has fewer features than the input vector. [1]
 
 ### 2. What is the bias-variance trade-off?
 
