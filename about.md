@@ -5,6 +5,6 @@ permalink: /about/
 tags: about
 ---
 
-* 19 years old
-* aspiring ML engineer
-* based in London
+* ML engineer, I like to build things
+* 19 years old, London
+
